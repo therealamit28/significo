@@ -1,0 +1,83 @@
+@font-face {
+    font-family: machina;
+    src: url('./fonts/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.ttf');
+}
+
+@font-face {
+    font-family: machinaa;
+    src: url('./fonts/659dbdfd5a080be8d348316f_PPNeueMachina_\ Light.ttf');
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url('./fonts/659dbdfd5a080be8d3483173_Satoshi-Variable.ttf');
+}
+
+.videocont {
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+:root {
+    --salmon: #EF9D71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #AEDEE0;
+    --dsalmon:#532521;
+    --dcyan: #1f2f32;
+}
+
+body {
+    transition: background-color ease-out .5s;
+}
+
+
+body[theme="black"]{
+    background-color: var(--black);
+    /* transform: translateY(0%) rotate(-); */
+}
+
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section{
+    color: var(--black);
+}
+
+body[theme="white"]{
+    background-color: #fff;
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+body[theme="selmon"]{
+    background-color: var(--salmon);
+}
+
+body[theme="selmon"] .section{
+    color: var(--dsalmon);
+}
+
+.bluelayers {
+    transition: all ease-in-out .2s;
+}
+
+.stipsContiner:hover .bluelayers {
+    height: 100%;
+}
+
+.nav2 h2:hover {
+    cursor: pointer;
+}
+
+
